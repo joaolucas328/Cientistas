@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f8f9fa;
+    color: #222;
+
+}
+
+header {
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.intro {
+    width: 90%;
+ 
+    margin: 30px auto 10px auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6rem;
+}
+.cards {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: transform .2s ease, box-shadow .25s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 32px rgba(0,0,0,0.12);
+}
+
+.card-text {
+    width: 65%;
+}
+
+.card-text h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.card-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4rem;
+}
+
+.card-img {
+    width: 28%;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+@media (max-width: 550px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-text {
+        width: 100%;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 140px;
+    }
+}
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    background: #fff;
+    color: #444;
+    font-size: 1rem;
+    border-top: 1px solid #eee;
+
+}
+
+
+.card2 {
+    background: rgba(255, 255, 255, 0.829);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: transform .2s ease, box-shadow .25s ease;
+    cursor: pointer;
+    flex-direction: column;
+    padding: 10px;
+}
